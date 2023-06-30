@@ -1,0 +1,14 @@
+<a *ngIf="!icon"
+  class="button_component"
+  (mouseenter)="hover = true"
+  (mouseleave)="hover = false"
+  [ngStyle]="{ backgroundColor: !hover ? backgroundColor : backgroundHover, color: textColor }">
+  {{ text }}
+</a>
+
+<a *ngIf="icon"
+  class="button_component"
+  [ngStyle]="{ backgroundColor: backgroundColor, color: textColor }">
+  <img [src]="icon">
+  {{ text }}
+</a>

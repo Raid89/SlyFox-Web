@@ -1,0 +1,21 @@
+.button_component{
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-family: SlyFont;
+  gap: 8px;
+
+  img{
+    width: 18px;
+  }
+}
+
+.button_component:hover{
+  background-color: red;
+  backdrop-filter: brightness(0.8);
+}
