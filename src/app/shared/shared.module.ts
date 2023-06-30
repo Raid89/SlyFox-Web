@@ -6,6 +6,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InfoCardComponent } from './components/info-card/info-card.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ItemNavBarComponent } from './components/item-nav-bar/item-nav-bar.component';
+import { DescriptionItemComponent } from './components/description-item/description-item.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ItemNavBarComponent } from './components/item-nav-bar/item-nav-bar.comp
     ButtonComponent,
     InfoCardComponent,
     MenuComponent,
-    ItemNavBarComponent
+    ItemNavBarComponent,
+    DescriptionItemComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { ItemNavBarComponent } from './components/item-nav-bar/item-nav-bar.comp
   ],
   exports: [
     ButtonComponent,
-    InfoCardComponent
+    InfoCardComponent,
+    DescriptionItemComponent
   ]
 })
 export class SharedModule { }

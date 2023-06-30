@@ -1,0 +1,7 @@
+<div class="description_item__container inline-block max-w-[195px] text-center">
+    <div class="description_item__icons_container flex justify-center gap-3">
+        <img *ngFor="let icon of icons" [src]="'assets/icons/' + icon" class="description_item__icon">
+    </div>
+    <p class="description_item__title text-xl font-bold">{{ title }}</p>
+    <p class="description_item__text text-sm">{{ text }}</p>
+</div>

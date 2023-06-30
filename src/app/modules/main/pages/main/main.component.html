@@ -1,1 +1,9 @@
-<p>main works!</p>
+<div class="flex">
+    <sly-description-item *ngFor="let item of arrayItemsDescription"
+        [title]="item.title"
+        [text]="item.text"
+        [icons]="item.icons"
+    ></sly-description-item>
+</div>
+
+
