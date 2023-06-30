@@ -1,0 +1,11 @@
+<ng-container [ngTemplateOutlet]="type === 'simple' ? simple : select"></ng-container>
+
+
+<ng-template #simple>
+    <a [routerLink]="route" class="font-bold cursor-pointer">{{ text }}</a>
+</ng-template>
+
+<ng-template #select>
+    <a [routerLink]="route" class="font-bold cursor-pointer"> <span class="flex items-center gap-4"> {{ text }} <img src="assets/icons/down_arrow.svg" alt=""> </span></a>
+</ng-template>
+

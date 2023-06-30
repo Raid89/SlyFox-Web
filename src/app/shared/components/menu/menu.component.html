@@ -1,0 +1,18 @@
+<div class="menu__principal_container">
+    <div class="menu__nav_bar flex justify-between items-center py-5 px-8">
+        <div class="nav_bar__logo">
+            <img src="assets/images/logos/slyfox_logo.svg" alt="">
+        </div>
+
+        <div class="nav_bar__navigation flex gap-14">
+            <sly-item-nav-bar text="Acerca de Nosotros" type="simple"></sly-item-nav-bar>
+            <sly-item-nav-bar text="Servicios" type="select"></sly-item-nav-bar>
+            <sly-item-nav-bar text="Contáctanos" type="simple"></sly-item-nav-bar>
+        </div>
+    </div>
+
+    <div class="menu__rounting_container">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
