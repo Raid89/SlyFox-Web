@@ -3,3 +3,11 @@ export interface IItemDescription{
     text: string;
     icons: string[];
 }
+
+export interface IInfoCard{
+    title: string;
+    text: string;
+    images?: Array<string>;
+    colorButton?: string;
+    textButton?: string;
+}

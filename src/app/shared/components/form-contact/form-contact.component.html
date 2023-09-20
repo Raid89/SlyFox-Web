@@ -1,0 +1,55 @@
+<div class="border-therty-color rounded-md border-2 max-w-screen-sm p-10">
+    
+    <form [formGroup]="formUser" (submit)="sendForm()" class="flex flex-col gap-7">
+        <p class="flex gap-10 items-center text-principal-color font-extrabold text-xl"><img src="assets/images/icons/logo-pequeno.svg" alt="Logo SlyFox"> Enviar mensaje</p>
+        <div class="form-group">
+          <input type="text" id="nombre" formControlName="nombre" placeholder="Nombre">
+        </div>
+      
+        <div class="form-group">
+          <input type="email" id="email" formControlName="email" placeholder="Email">
+        </div>
+      
+        <div class="form-group">
+          <input type="text" id="telefono" formControlName="telefono" placeholder="Teléfono">
+        </div>
+      
+        <div class="form-group">
+            <label class="text-principal-color font-extrabold">Método preferido de comunicación:</label>
+            <div class="text-therty-color font-extrabold flex gap-8">
+                <input class="hidden" type="radio" id="radioTelefono" formControlName="metodoComunicacion" value="email" />
+                <label for="radioTelefono" class="flex gap-3 items-center cursor-pointer">
+                    <ng-container *ngIf="formUser.value.metodoComunicacion === 'email'; then selected else noselected"></ng-container>
+                      Teléfono
+                </label>
+                <input class="hidden" id="radioEmail" type="radio" value="telefono" formControlName="metodoComunicacion" />
+                <label for="radioEmail" class="flex gap-3 items-center cursor-pointer">
+                    <ng-container *ngIf="formUser.value.metodoComunicacion === 'telefono'; then selected else noselected"></ng-container>
+                  Email
+                </label>
+            </div>
+        </div>
+      
+        <div class="form-group">
+          <input id="mensaje" formControlName="mensaje" placeholder="Mensaje">
+        </div>
+      
+        <div class="form-group">
+          <button class="w-full flex items-center justify-center py-1 rounded text-white cursor-pointer bg-principal-color" type="submit" [disabled]="formUser.invalid">Enviar</button>
+        </div>
+    </form>
+</div>
+
+
+<ng-template #selected>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+        <circle cx="6" cy="6" r="5.5" stroke="#15242F"/>
+        <circle cx="6" cy="6" r="4" fill="#FF7070"/>
+    </svg>
+  </ng-template>
+  
+  <ng-template #noselected>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+        <circle cx="6" cy="6" r="5.5" stroke="#B4B4B4" stroke-opacity="0.7"/>
+    </svg>
+  </ng-template>

@@ -1,9 +1,195 @@
-<div class="flex">
-    <sly-description-item *ngFor="let item of arrayItemsDescription"
-        [title]="item.title"
-        [text]="item.text"
-        [icons]="item.icons"
-    ></sly-description-item>
+
+
+<div class="main__container">
+    <div class="main__principal_view flex items-center justify-center sm:flex-row flex-col sm:px-0  ">
+        <div class="main__principal_view__left">
+            <div class="flex flex-col gap-6 text-center sm:mb-0 mb-8">
+                <h1 class="text-secondary-color xl:text-[50px] sm:text-[45px] text-[30px] font-black font-sly-font max-w-[652px]">
+                    Transformamos ideas en experiencias digitales excepcionales.
+                </h1>
+                <p class="text-gray-color font-medium sm:text-xl text-sm max-w-[569px]">
+                    ¡Contáctanos hoy mismo y descubre cómo podemos llevar tu presencia en línea al siguiente nivel!
+                </p>
+            </div>
+        </div>
+
+        <div class="main__principal_view__right">
+            <div class="relative flex items-center">
+                <img src="assets/images/others/MockUp.png" class="z-10">
+                <img src="assets/images/others/Background-mockup.png" class="absolute sm:block hidden">
+            </div>
+        </div>
+    </div>
+
+    <div class="main__our_services text-center">
+        <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font py-14">Nuestros servicios</h2>
+        <div class="flex justify-center flex-wrap gap-9">
+            <sly-info-card
+                *ngFor="let infoCard of arrayInfoCards"
+                [title]="infoCard.title"
+                [text]="infoCard.text"
+                [images]="infoCard.images"
+                [colorButton]="infoCard.colorButton"
+            ></sly-info-card>
+        </div>      
+    </div>
+
+    <div class="main__more_clients text-center">
+        <div class="m-auto max-w-4xl px-2">
+            <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">SlyFox puede ayudarte a crecer más rápido</h2>
+            <p class="font-manrope sm:text-lg text-base text-principal-color">
+                Potencia tu crecimiento con nosotros. Desarrollo web, diseño UX/UI y marketing digital en un solo lugar.
+                Páginas de destino irresistibles que generan conversiones. 
+                <br>
+                <span class="text-secondary-color  font-bold">¡Únete a nuestro éxito!</span>
+            </p>
+        </div>
+
+        <div class="text-left font-manrope md:flex hidden flex-wrap justify-center items-center w-full px-36 lg:mt-24 mt-20">
+            <p class="w-1/6 lg:text-3xl text-1xl text-principal-color font-semibold lg:block hidden">SlyFox puede ayudarte a crecer más rápido</p>
+            <div>
+                <p class="lg:text-4xl text-2xl text-secondary-color font-bold">180%</p>
+                <span class="lg:text-xl text-base text-gray-color">Veces más rapido</span>
+            </div>
+
+            <div>
+                <p class="lg:text-4xl text-2xl text-secondary-color font-bold">+10</p>
+                <span class="lg:text-xl text-base text-gray-color">Herramientas de desarrollo</span>
+            </div>
+
+            <div>
+                <p class="lg:text-4xl text-2xl text-secondary-color font-bold">24/7Hrs</p>
+                <span class="lg:text-xl text-base text-gray-color">Trabajando por nuestros clientes.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__section_design text-center">
+        <div class="m-auto max-w-6xl px-2 mb-16">
+            <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Creando Experiencias Digitales Extraordinarias
+                UX/UI</h2>
+            <p class="font-manrope sm:text-lg text-base text-principal-color">
+                Investigamos las necesidades de tus usuarios, sintetizamos ideas innovadoras y diseñamos interfaces sorprendentes. Nuestros prototipos validados aseguran soluciones centradas en las personas.
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center w-fit m-auto divide-y divide-gray-300">
+            <div class="flex flex-wrap justify-center items-center gap-14 pb-12">
+                <img src="assets/images/design/finapp.jpg" alt="">
+                <img src="assets/images/design/image2.jpg" alt="">
+                <img src="assets/images/design/noseapato.jpg" alt="">
+            </div>
+
+            <div class="flex sm:flex-row flex-col sm:items-start items-center text-left gap-28 w-full pt-9">
+                <sly-user-card
+                     avatar="cristian"
+                    nombre="Cristian Suarez"
+                    nickname="Zerausdesigner"
+                    textButton="Ver Behance">
+                </sly-user-card>
+                <span class="text-xl text-principal-color sm:text-left text-center">“Recuerda la primera impresión es la <br> que cuenta.”</span>
+            </div>
+        </div>
+   
+    </div>
+
+    <div class="main__section_marketing text-center">
+        <div class="m-auto max-w-6xl px-2 mb-16">
+            <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Estrategias de Marketing Digital que Conquistan Audiencias y Elevan tu <br> Marca a lo más Alto</h2>
+            <p class="font-manrope sm:text-lg text-base text-principal-color">
+                Potencia la visibilidad de tu negocio en línea con nuestras estrategias de marketing digital. Desde la optimización de motores de búsqueda (SEO) hasta la publicidad en redes sociales y la gestión de campañas de marketing, te ayudamos a llegar a tu audiencia objetivo, aumentar la generación de leads y expandir tu presencia en línea.
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center w-fit m-auto divide-y divide-gray-300">
+            <div class="flex flex-wrap justify-center items-center gap-14 pb-12">
+                <img src="assets/images/design/finapp.jpg" alt="">
+                <img src="assets/images/design/image2.jpg" alt="">
+                <img src="assets/images/design/noseapato.jpg" alt="">
+            </div>
+
+            <div class="flex sm:flex-row flex-col  sm:items-start items-center text-left gap-28 w-full pt-9">
+                <sly-user-card
+                    avatar="alejandra"
+                    nombre="Alejandra Eraso"
+                    nickname="AlejandraEraso"
+                    [button]="false">
+                </sly-user-card>
+                <span class="text-xl text-principal-color sm:text-left text-center">"Comprender a tu audiencia en línea es vital <br> para el <span class="text-secondary-color font-bold">éxito</span>."</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__section_development text-center">
+        <div class="m-auto max-w-6xl px-2 mb-16">
+            <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Desarrollo web a la Vanguardia de la Innovación y el <br> Impacto</h2>
+            <p class="font-manrope sm:text-lg text-base text-principal-color">
+                Creamos sitios web personalizados que se adaptan a tus necesidades y objetivos. Desde páginas informativas hasta complejas plataformas de comercio electrónico, nuestro equipo de expertos en desarrollo web se encargará de brindarte una presencia en línea sólida y atractiva.
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center w-fit m-auto divide-y divide-gray-300">
+            <div class="flex flex-wrap justify-center items-center gap-14 pb-12">
+                <img src="assets/images/development/image1.png" alt="">
+                <img src="assets/images/development/image2.png" alt="">
+                <img src="assets/images/development/image3.png" alt="">
+            </div>
+
+            <div class="flex sm:flex-row flex-col sm:items-start items-center text-left gap-28 w-full pt-9">
+                <sly-user-card
+                    avatar="nicolas"
+                    nombre="Nicolas Castellanos"
+                    nickname="NicolasDev"
+                    textButton="Ver Github">
+                </sly-user-card>
+                <span class="text-xl text-principal-color sm:text-left text-center">“El desarrollo es un viaje interminable hacia el infinito <br> de la  creatividad digital.”</span>
+            </div>
+        </div>
+   
+    </div>
+
+    <div class="main__more_info text-sm sm:flex flex-col mt-12 hidden">
+        <div class="m-auto">
+            <p class="font-semibold">
+                "¡Tu puerta de entrada al mundo digital! Eleva tu experiencia en línea con nosotros. Ofrecemos servicios especializados en diseño UX/UI, desarrollo web y estrategias de marketing digital, brindándote soluciones que destacan en el mundo digital.
+            </p>
+            <br>
+            <div>
+                <p class="font-medium">¿Qué ofrecemos?</p>
+                <br>
+                <ol style="list-style: inside;">
+                    <li>Diseño UX/UI de calidad: Creamos interfaces que combinan belleza y funcionalidad, asegurando una experiencia del usuario excepcional. Cada interacción se diseña con precisión para proporcionar un viaje digital fluido y atractivo.</li>
+                    <li>Desarrollo web innovador: Nuestro equipo de desarrolladores da vida a tus ideas mediante sitios web y aplicaciones interactivas de alto rendimiento. Desde la programación hasta la optimización, garantizamos una presencia en línea que impresionará.</li>
+                    <li>presencia en línea que impresionará. Estrategias de marketing digital efectivas: Alcanza a tu audiencia con estra tegias digitales sólidas. Desde la planificación hasta el análisis, creamos campañas que generan impacto y resultados mensurables.</li>
+                </ol>
+            </div>
+            <br>
+            <div>
+                <p class="font-medium">¿Por qué nosotros?</p>
+                <br>
+                <ol style="list-style: inside;">
+                    <li>Experiencia y creatividad: Con años en el campo, convertimos tus conceptos en realidades digitales sobresalientes.</li>
+                    <li>Enfocados en ti: Trabajamos en colaboración para entender tus necesidades, creando soluciones adaptadas que impulsan resultados tangibles.</li>
+                    <li>Medible y ajustable: Usamos métricas concretas para evaluar el éxito y ajustar estrategias según la necesidad.</li>
+                    <li>Innovación constante: Siempre estamos en búsqueda de nuevas formas de superarnos y brindar soluciones de vanguardia.</li>
+                </ol>
+            </div>
+            <p class="font-bold text-lg text-center mt-11 border-b-2 pb-12 border-therty-color">“Únete a nosotros en este viaje hacia la excelencia digital. Juntos, creamos un impacto duradero en línea. <br>
+                Contáctanos hoy mismo y descubre cómo podemos llevar tu presencia en línea al siguiente nivel." </p>
+        </div>
+    </div>
+
+    <div class="main__contact_form mt-12">
+        <div class="flex sm:flex-row flex-col-reverse m-auto sm:items-start items-center justify-around">
+            <div class="sm:mt-0 mt-7">
+                <div class="sm:block hidden">
+                    <p class="font-extrabold text-3xl text-principal-color">Contáctanos</p>
+                    <p class="font-medium text-base mb-16 mt-3">¡Contáctanos hoy mismo para descubrir cómo podemos <br> potenciar tu presencia en línea!"</p>    
+                </div>
+
+                <div class="flex flex-col sm:items-start items-center sm:text-left text-center">
+                    <img src="assets/images/logos/slyfox_logo.svg" alt="Logo Slyfox" class="sm:w-auto w-36">
+                    <p class="font-medium text-base mt-6">Diseña increíbles experiencias digitales <br> que crean más felicidad en el mundo.</p>
+                </div>
+            </div>
+            <sly-form-contact></sly-form-contact>
+        </div>
+    </div>
 </div>
-
-
