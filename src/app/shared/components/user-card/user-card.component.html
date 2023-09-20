@@ -1,0 +1,19 @@
+<div class="inline-flex sm:flex-row flex-col justify-center items-center">
+
+    <div class="flex justify-between items-center">
+        <img [src]="'assets/images/avatars/'+ avatar +'.png'" [alt]="nombre" class="bg-purple-400 rounded-full">
+
+        <div class="ml-4 mr-8">
+            <p class="font-bold text-xl text-principal-color">{{ nombre }}</p>
+            <p class="text-lg text-principal-color">@ {{ nickname }}</p>
+        </div>
+    </div>
+
+
+    <sly-button *ngIf="button"
+        [text]="textButton"
+        textColor="#fff"
+        backgroundColor="#15242F"
+        backgroundHover="#15242F"
+    ></sly-button>
+</div>

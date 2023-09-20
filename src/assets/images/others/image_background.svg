@@ -1,0 +1,28 @@
+<svg width="436" height="444" viewBox="0 0 436 444" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_214_64)">
+<path d="M226.371 119.944C247.535 237.745 251.543 227.289 208.637 258.709C165.73 290.128 104.104 278.943 70.9918 233.725C37.8796 188.507 45.8198 126.38 88.7267 94.9599C131.634 63.54 205.207 2.14174 226.371 119.944Z" fill="#FF7070"/>
+</g>
+<g filter="url(#filter1_f_214_64)">
+<path d="M325.233 199.479C274.764 308.005 284.058 301.759 230.887 302.77C177.716 303.781 133.748 259.175 132.682 203.14C131.617 147.105 173.857 100.86 227.028 99.8487C280.199 98.8375 375.702 90.9517 325.233 199.479Z" fill="#543BB7"/>
+</g>
+<g filter="url(#filter2_f_214_64)">
+<path d="M370.724 292.5C318.163 400.004 327.581 393.938 274.362 393.938C221.143 393.938 178 348.522 178 292.5C178 236.478 221.143 191.062 274.362 191.062C327.581 191.062 423.285 184.996 370.724 292.5Z" fill="#15242F"/>
+</g>
+<defs>
+<filter id="filter0_f_214_64" x="0.542725" y="0.702766" width="291.268" height="325.84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_214_64"/>
+</filter>
+<filter id="filter1_f_214_64" x="82.6627" y="49.3402" width="306.842" height="303.447" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_214_64"/>
+</filter>
+<filter id="filter2_f_214_64" x="128" y="141" width="308" height="303" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_214_64"/>
+</filter>
+</defs>
+</svg>
