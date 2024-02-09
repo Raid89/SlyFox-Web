@@ -2,6 +2,7 @@
   class="button_component"
   (mouseenter)="hover = true"
   (mouseleave)="hover = false"
+  [href]="linkHref"
   [ngStyle]="{ backgroundColor: !hover ? backgroundColor : backgroundHover, color: textColor }">
   {{ text }}
 </a>

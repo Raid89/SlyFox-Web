@@ -1,8 +1,19 @@
-<div class="dropdown">
-    <button (click)="toggleMenu()"><img src="assets/images/icons/icon-menu.svg"></button>
-    <ul [ngClass]="{ 'show': isMenuOpen }">
-      <li><a href="#">Opción 1</a></li>
-      <li><a href="#">Opción 2</a></li>
-      <li><a href="#">Opción 3</a></li>
-    </ul>
-  </div>
+<div class="dropdown  bg-white relative font-manrope font-bold text-sm hidden sm:inline-block">
+  <button (click)="toggleMenu()">Servicios</button>
+  <ul [ngClass]="{ 'show': isMenuOpen }" class="xl-ul">
+    <li><a href="#design" class="text-sm font-bold xl-item">Diseño Ux/Ui</a></li>
+    <li><a href="#dev" class="text-sm font-bold xl-item">Desarrollo web</a></li>
+    <li><a href="#marketing" class="text-sm font-bold xl-item">Marketing digital</a></li>
+  </ul>
+</div>
+
+<div class="dropdown  bg-white relative font-manrope font-bold text-sm sm:hidden inline-block">
+  <button (click)="toggleMenu()"><img src="assets/images/icons/icon-menu.svg"></button>
+  <ul [ngClass]="{ 'show': isMenuOpen }">
+    <li><a class="servicio-sm text-white font-bold">Servicio</a></li>
+    <li><a href="#design" class="text-xs font-medium">Diseño Ux/Ui</a></li>
+    <li><a href="#dev" class="text-xs font-medium">Desarrollo web</a></li>
+    <li><a href="#marketing" class="text-xs font-medium">Marketing digital</a></li>
+    <li><a href="#contact" class="text-sm font-bold">Contactanos</a></li>
+  </ul>
+</div>

@@ -10,4 +10,5 @@ export interface IInfoCard{
     images?: Array<string>;
     colorButton?: string;
     textButton?: string;
+    link: string;
 }

@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainModule } from './modules/main/main.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: '', pathMatch: 'full'},
   
   { 
-    path: 'home',
+    path: '',
     loadChildren: () => import('./modules/main/main.module').then(m => MainModule) 
   }
 ];

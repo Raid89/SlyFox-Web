@@ -12,6 +12,7 @@ export class ButtonComponent {
   @Input() backgroundColor!: string;
   @Input() backgroundHover!: string;
   @Input() textColor!: string;
+  @Input() linkHref!: string;
 
   public hover = false;
 

@@ -1,0 +1,11 @@
+.menu__nav_bar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    transition: top 1s ease;
+}
+
+.menu__nav_bar.hidden{
+    top: -100px;
+}

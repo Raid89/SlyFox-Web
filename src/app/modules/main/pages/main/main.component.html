@@ -1,7 +1,7 @@
 
 
 <div class="main__container">
-    <div class="main__principal_view flex items-center justify-center sm:flex-row flex-col sm:px-0  ">
+    <div class="main__principal_view flex items-center justify-center sm:flex-row flex-col sm:px-0  sm:pt-[241px] pt-[63px]">
         <div class="main__principal_view__left">
             <div class="flex flex-col gap-6 text-center sm:mb-0 mb-8">
                 <h1 class="text-secondary-color xl:text-[50px] sm:text-[45px] text-[30px] font-black font-sly-font max-w-[652px]">
@@ -30,6 +30,7 @@
                 [text]="infoCard.text"
                 [images]="infoCard.images"
                 [colorButton]="infoCard.colorButton"
+                [linkButton]="infoCard.link"
             ></sly-info-card>
         </div>      
     </div>
@@ -45,7 +46,7 @@
             </p>
         </div>
 
-        <div class="text-left font-manrope md:flex hidden flex-wrap justify-center items-center w-full px-36 lg:mt-24 mt-20">
+        <div class="text-left font-manrope md:flex hidden flex-wrap justify-between items-center w-full px-36 lg:mt-24 mt-20">
             <p class="w-1/6 lg:text-3xl text-1xl text-principal-color font-semibold lg:block hidden">SlyFox puede ayudarte a crecer más rápido</p>
             <div>
                 <p class="lg:text-4xl text-2xl text-secondary-color font-bold">180%</p>
@@ -64,7 +65,7 @@
         </div>
     </div>
 
-    <div class="main__section_design text-center">
+    <div class="main__section_design text-center" id="design">
         <div class="m-auto max-w-6xl px-2 mb-16">
             <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Creando Experiencias Digitales Extraordinarias
                 UX/UI</h2>
@@ -92,7 +93,7 @@
    
     </div>
 
-    <div class="main__section_marketing text-center">
+    <div class="main__section_marketing text-center" id="marketing">
         <div class="m-auto max-w-6xl px-2 mb-16">
             <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Estrategias de Marketing Digital que Conquistan Audiencias y Elevan tu <br> Marca a lo más Alto</h2>
             <p class="font-manrope sm:text-lg text-base text-principal-color">
@@ -100,10 +101,26 @@
             </p>
         </div>
         <div class="flex flex-col justify-center items-center w-fit m-auto divide-y divide-gray-300">
-            <div class="flex flex-wrap justify-center items-center gap-14 pb-12">
-                <img src="assets/images/design/finapp.jpg" alt="">
-                <img src="assets/images/design/image2.jpg" alt="">
-                <img src="assets/images/design/noseapato.jpg" alt="">
+            <div class="flex flex-wrap sm:flex-nowrap justify-center items-start gap-14 pb-12">
+                <div class="flex justify-center items-center flex-col w-1/4">
+                    <img src="assets/images/marketing/image1.png" alt="">
+                    <p>Fácil <br> automatización</p>
+                </div>
+                
+                <div class="flex justify-center items-center flex-col w-1/4">
+                    <img src="assets/images/marketing/image2.png" alt="">
+                    <p>Generación de leads <br> más rápida</p>
+                </div>
+                
+                <div class="flex justify-center items-center flex-col w-1/4">
+                    <img src="assets/images/marketing/image3.png" alt="">
+                    <p>Estrategias <br> de contenidos premium</p>
+                </div>
+
+                <div class="flex justify-center items-center flex-col w-1/4">
+                    <img src="assets/images/marketing/image4.png" alt="">
+                    <p>Adaptabilidad</p>
+                </div>
             </div>
 
             <div class="flex sm:flex-row flex-col  sm:items-start items-center text-left gap-28 w-full pt-9">
@@ -118,7 +135,7 @@
         </div>
     </div>
 
-    <div class="main__section_development text-center">
+    <div class="main__section_development text-center" id="dev">
         <div class="m-auto max-w-6xl px-2 mb-16">
             <h2 class="sm:text-4xl text-2xl text-principal-color font-bold font-sly-font pt-28 pb-11">Desarrollo web a la Vanguardia de la Innovación y el <br> Impacto</h2>
             <p class="font-manrope sm:text-lg text-base text-principal-color">
@@ -176,7 +193,7 @@
         </div>
     </div>
 
-    <div class="main__contact_form mt-12">
+    <div class="main__contact_form mt-12" id="contact">
         <div class="flex sm:flex-row flex-col-reverse m-auto sm:items-start items-center justify-around">
             <div class="sm:mt-0 mt-7">
                 <div class="sm:block hidden">

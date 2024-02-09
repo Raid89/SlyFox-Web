@@ -12,7 +12,8 @@ export class InfoCardComponent implements OnInit {
   @Input() colorButton?: string  = "#15242F";
   @Input() textButton = "Ver más";
   @Input() images?: Array<string>;
-
+  @Input() linkButton!: string;
+  
   ngOnInit() {
     if (this.colorButton === null || this.colorButton === undefined) {
       this.colorButton = "#15242F"; // Valor predeterminado si colorButton es null o undefined
