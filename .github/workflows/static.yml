@@ -1,4 +1,4 @@
-name: Build Angular App
+name: Build and Deploy Angular App
 
 on:
   push:
@@ -23,3 +23,20 @@ jobs:
 
       - name: Build Angular app
         run: npm run build -- --prod
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          branch: gh-pages
+          folder: dist/slyfox-web # Ajusta esta carpeta según la ubicación de tu compilación
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
