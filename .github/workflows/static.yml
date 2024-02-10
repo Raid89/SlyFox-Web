@@ -1,0 +1,27 @@
+name: Serve Angular app from docs folder
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  serve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install http-server
+        run: npm install -g http-server
+
+      - name: Serve Angular app
+        run: |
+          cd docs
+          http-server -p 8080
