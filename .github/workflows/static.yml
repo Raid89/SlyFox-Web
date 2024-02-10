@@ -1,4 +1,4 @@
-name: Serve Angular app from docs folder
+name: Deploy Angular app to GitHub Pages
 
 on:
   push:
@@ -6,22 +6,26 @@ on:
       - main
 
 jobs:
-  serve:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '14'
 
-      - name: Install http-server
-        run: npm install -g http-server
+      - name: Install dependencies
+        run: npm install
 
-      - name: Serve Angular app
-        run: |
-          cd docs
-          http-server -p 8080
+      - name: Build Angular app
+        run: npm run build -- --prod
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/slyfox-web # Ajusta esta ruta según tu configuración
